@@ -3,8 +3,19 @@
 namespace LyVirgo\Netase;
 
 class Netease{
-    private $AppKey='Your AppKey';
-    private $AppSecret='Your AppSecret';
+    private $AppKey;
+    private $AppSecret;
+
+    /**
+     * Netease constructor.
+     * @param string $AppKey
+     * @param string $AppSecret
+     */
+    public function __construct($AppKey='',$AppSecret='')
+    {
+        $this->AppKey=$AppKey;
+        $this->AppSecret=$AppSecret;
+    }
 
     private function curl_post($url,$data)
     {
