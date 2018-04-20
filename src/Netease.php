@@ -21,6 +21,7 @@ class Netease{
     }
 
     /**
+     * 请求头
      * @return array
      */
     private function getHeader()
