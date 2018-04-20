@@ -1,6 +1,6 @@
 <?php
 
-namespace LyVirgo;
+namespace LyVirgo\Netase;
 
 class Netease{
     private $AppKey='Your AppKey';
